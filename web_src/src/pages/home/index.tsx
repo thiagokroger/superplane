@@ -145,11 +145,11 @@ const HomePage = () => {
 
   return (
     <div className="min-h-screen flex flex-col bg-slate-100 dark:bg-slate-900">
-      <header className="bg-white border-b border-slate-950/15 px-4 h-12 flex items-center">
+      <header className="bg-white dark:bg-slate-900 border-b border-slate-950/15 dark:border-slate-700 px-4 h-12 flex items-center">
         <OrganizationMenuButton organizationId={organizationId} />
       </header>
       <main className="w-full h-full flex flex-column flex-grow-1">
-        <div className="bg-slate-100 w-full flex-grow-1">
+        <div className="bg-slate-100 dark:bg-slate-900 w-full flex-grow-1">
           <div className="p-8">
             {!(activeTab === "canvases" && workflows.length === 0 && !searchQuery) && (
               <PageHeader activeTab={activeTab} onNewClick={onNewClick} />
